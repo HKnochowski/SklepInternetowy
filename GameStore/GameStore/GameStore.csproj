@@ -105,6 +105,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\GameType.cs" />
+    <Compile Include="Models\SalesInvoice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

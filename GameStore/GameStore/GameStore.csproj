@@ -117,6 +117,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801252132261_InitialCreate.cs" />
+    <Compile Include="Migrations\201801252132261_InitialCreate.Designer.cs">
+      <DependentUpon>201801252132261_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801252153334_Update1.0HK.cs" />
+    <Compile Include="Migrations\201801252153334_Update1.0HK.Designer.cs">
+      <DependentUpon>201801252153334_Update1.0HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Copie.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameType.cs" />
@@ -142,6 +151,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801252132261_InitialCreate.resx">
+      <DependentUpon>201801252132261_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801252153334_Update1.0HK.resx">
+      <DependentUpon>201801252153334_Update1.0HK.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

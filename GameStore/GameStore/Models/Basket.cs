@@ -5,12 +5,15 @@ using System.Web;
 
 namespace GameStore.Models
 {
-    public class SalesInvoice
+    public class Basket
     {
-        public int SalesInvoiceId { get; set; }
-        public int CodeSalesInvoice { get; set; }
+        public int BasketId { get; set; }
+        public int CodeBasket { get; set; }
         public decimal Price { get; set; }
         public OrderStatus OrderStatus { get; set; }
+        public DateTime AddedDate { get; set; }
+
+        List<Copie> Copie { get; set; }
 
 
     }

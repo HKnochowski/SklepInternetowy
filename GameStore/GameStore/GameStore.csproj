@@ -113,6 +113,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data_Access_Layer\StoreGameInitializer.cs" />
     <Compile Include="Data_Access_Layer\StoreGameContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,6 +125,10 @@
     <Compile Include="Migrations\201801252153334_Update1.0HK.cs" />
     <Compile Include="Migrations\201801252153334_Update1.0HK.Designer.cs">
       <DependentUpon>201801252153334_Update1.0HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801261651200_Update1.1HK.cs" />
+    <Compile Include="Migrations\201801261651200_Update1.1HK.Designer.cs">
+      <DependentUpon>201801261651200_Update1.1HK.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Copie.cs" />
@@ -158,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801252153334_Update1.0HK.resx">
       <DependentUpon>201801252153334_Update1.0HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801261651200_Update1.1HK.resx">
+      <DependentUpon>201801261651200_Update1.1HK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

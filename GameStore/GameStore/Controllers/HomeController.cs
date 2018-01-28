@@ -21,5 +21,10 @@ namespace GameStore.Controllers
 
             return View();
         }
+
+        public ActionResult StaticSite (string nazwa)
+        {
+            return View(nazwa);
+        }
     }
 }

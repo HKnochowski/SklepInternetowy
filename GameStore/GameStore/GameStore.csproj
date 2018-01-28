@@ -97,13 +97,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AboutPageAssets\images\profilephoto.png" />
+    <Content Include="Content\AboutPageAssets\images\social.png" />
+    <Content Include="Content\AboutPageAssets\styles\aboutPageStyle.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\category.css" />
+    <Content Include="Content\css\game.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\Wish-list.css" />
+    <Content Include="Content\eCommerceAssets\images\200x200.png" />
+    <Content Include="Content\eCommerceAssets\styles\eCommerceStyle.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\100X125.gif" />
+    <Content Include="Content\images\1920x500.gif" />
+    <Content Include="Content\images\400X200.gif" />
+    <Content Include="Content\images\40X40.gif" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\jquery-1.11.3.min.js" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Prototype\Category-list.html" />
+    <Content Include="Prototype\game.html" />
+    <Content Include="Prototype\index.html" />
+    <Content Include="Prototype\Wish-list.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -1,5 +1,6 @@
 ﻿using GameStore.Data_Access_Layer;
 using GameStore.Models;
+using GameStore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,18 @@ namespace GameStore.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            GameType GameType = new GameType { NameGameType = "RPG", FileGameType = "RPG.png", DescriptionGameType = "Lorem ipsum set dolor et amen" };
-            db.GamesTypes.Add(GameType);
-            db.SaveChanges();
+            var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(3).ToList();
+            var bestsellery = db.Games.Where(a => a.OrToBuy && a.GameRating <= 9).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+            var recommended = db.Games.Where(a => a.OrToBuy/*TODO &&*/).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
 
-            return View();
+            var vm = new HomeViewModel()
+            {
+                News = news,
+                Bestsellery = bestsellery,
+                Recommended = recommended
+            };
+
+            return View(vm);
         }
 
         public ActionResult StaticSite (string nazwa)

@@ -14,6 +14,11 @@ namespace GameStore.Data_Access_Layer
         {
         }
 
+        static StoreGameContext()
+        {
+            Database.SetInitializer<StoreGameContext>(new StoreGameInitializer());
+        }
+
         public DbSet<Game> Games { get; set; }
         public DbSet<GameType> GamesTypes { get; set; }
         public DbSet<Basket> Baskets { get; set; }

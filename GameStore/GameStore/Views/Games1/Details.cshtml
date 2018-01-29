@@ -1,0 +1,91 @@
+﻿@model GameStore.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GameType.NameGameType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameType.NameGameType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GamePremiere)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GamePremiere)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrToBuy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrToBuy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFileNews)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFileNews)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFileBestseller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFileBestseller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFileRecomended)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFileRecomended)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

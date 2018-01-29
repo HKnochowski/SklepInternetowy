@@ -110,10 +110,20 @@
     <Content Include="Content\eCommerceAssets\images\200x200.png" />
     <Content Include="Content\eCommerceAssets\styles\eCommerceStyle.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\images\100X125.gif" />
-    <Content Include="Content\images\1920x500.gif" />
+    <Content Include="Content\images\bestseller\100X125.gif" />
+    <Content Include="Content\images\bestseller\FarCry5_bestseller.png" />
+    <Content Include="Content\images\bestseller\FrostPunk_bestseller.png" />
+    <Content Include="Content\images\bestseller\Gta5_bestseller.png" />
+    <Content Include="Content\images\bestseller\Skyrim_bestseller.png" />
+    <Content Include="Content\images\bestseller\witcher_3_bestseller.png" />
+    <Content Include="Content\images\news\1920x500.gif" />
     <Content Include="Content\images\400X200.gif" />
     <Content Include="Content\images\40X40.gif" />
+    <Content Include="Content\images\news\FarCry5_news.png" />
+    <Content Include="Content\images\news\FrostPunk_news.png" />
+    <Content Include="Content\images\news\Gta5_news.png" />
+    <Content Include="Content\images\news\Skyrim_news.png" />
+    <Content Include="Content\images\news\witcher_3_news.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\jquery-1.11.3.min.js" />
     <Content Include="Content\Site.css" />
@@ -133,16 +143,23 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
+    <Compile Include="Controllers\Games1Controller.cs" />
+    <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data_Access_Layer\StoreGameInitializer.cs" />
     <Compile Include="Data_Access_Layer\StoreGameContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructuce\AppConfig.cs" />
+    <Compile Include="Infrastructuce\UrlHelpers.cs" />
     <Compile Include="Migrations\201801252132261_InitialCreate.cs" />
     <Compile Include="Migrations\201801252132261_InitialCreate.Designer.cs">
       <DependentUpon>201801252132261_InitialCreate.cs</DependentUpon>
@@ -154,6 +171,18 @@
     <Compile Include="Migrations\201801261651200_Update1.1HK.cs" />
     <Compile Include="Migrations\201801261651200_Update1.1HK.Designer.cs">
       <DependentUpon>201801261651200_Update1.1HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801292112361_ModyfikacjaKlasyGame.cs" />
+    <Compile Include="Migrations\201801292112361_ModyfikacjaKlasyGame.Designer.cs">
+      <DependentUpon>201801292112361_ModyfikacjaKlasyGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801292157453_HKUpdate1.5.cs" />
+    <Compile Include="Migrations\201801292157453_HKUpdate1.5.Designer.cs">
+      <DependentUpon>201801292157453_HKUpdate1.5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801292205525_Update1.6HK.cs" />
+    <Compile Include="Migrations\201801292205525_Update1.6HK.Designer.cs">
+      <DependentUpon>201801292205525_Update1.6HK.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Copie.cs" />
@@ -174,6 +203,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Onas.cshtml" />
+    <Content Include="Views\Games\Lista.cshtml" />
+    <Content Include="Views\Games1\Create.cshtml" />
+    <Content Include="Views\Games1\Delete.cshtml" />
+    <Content Include="Views\Games1\Details.cshtml" />
+    <Content Include="Views\Games1\Edit.cshtml" />
+    <Content Include="Views\Games1\Index.cshtml" />
+    <Content Include="Views\Basket\AddToBasket.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -193,6 +229,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801261651200_Update1.1HK.resx">
       <DependentUpon>201801261651200_Update1.1HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801292112361_ModyfikacjaKlasyGame.resx">
+      <DependentUpon>201801292112361_ModyfikacjaKlasyGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801292157453_HKUpdate1.5.resx">
+      <DependentUpon>201801292157453_HKUpdate1.5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801292205525_Update1.6HK.resx">
+      <DependentUpon>201801292205525_Update1.6HK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

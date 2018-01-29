@@ -19,6 +19,9 @@ namespace GameStore.Models
         public DateTime GamePremiere { get; set; }
         public int GameRating { get; set; }
         public bool OrToBuy { get; set; }
+        public string NameFileNews { get; set; }
+        public string NameFileBestseller { get; set; }
+        public string NameFileRecomended { get; set; }
 
         public virtual GameType GameType { get; set; }
     }

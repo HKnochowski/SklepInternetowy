@@ -16,6 +16,7 @@ namespace GameStore.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            //TEST var Test = db.Games.ToList();
             var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(3).ToList();
             var bestsellery = db.Games.Where(a => a.OrToBuy && a.GameRating <= 9).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
             var recommended = db.Games.Where(a => a.OrToBuy/*TODO &&*/).OrderBy(a => Guid.NewGuid()).Take(3).ToList();

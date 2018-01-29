@@ -20,7 +20,9 @@ namespace GameStore.Data_Access_Layer
                             GameDescription ="Gra wydana przez polskie studia CD Project RED",
                             GamePremiere = new DateTime(2015,5,11),
                             GameRating =9,
-                            OrToBuy =true},
+                            OrToBuy =true,
+                            NameFileNews = "witcher_3_news.png",
+                            NameFileBestseller = "witcher_3_bestseller.png"},
 
                 new Game {  GameName="The Elder Scroll V: Skyrim",
                             GameTypeId =1,
@@ -33,21 +35,27 @@ namespace GameStore.Data_Access_Layer
                             GameTypeId =2,
                             GameDescription ="Gra tworzona przez polskie studio 11BitStudio",
                             GamePremiere = new DateTime(2018,3,31),
-                            OrToBuy =false},
+                            OrToBuy =false,
+                            NameFileNews = "FrostPunk_news.png",
+                            NameFileBestseller = "FrostPunk_bestseller.png"},
 
                 new Game {  GameName="Grand Theft Auto V",
                             GameTypeId =3,
                             GameDescription ="Gra wydana przez studio Rockstar Games",
                             GamePremiere = new DateTime(2013,9,13),
                             GameRating =9,
-                            OrToBuy =true},
+                            OrToBuy =true,
+                            NameFileNews = "Gta5_news.png",
+                            NameFileBestseller = "Gta5_bestseller.png"},
 
                 new Game {  GameName="Far Cry 5",
                             GameTypeId =3,
                             GameDescription ="Gra tworzona przez znane studio Ubisoft",
                             GamePremiere = new DateTime(2018,3,27),
                             GameRating =8,
-                            OrToBuy =false}
+                            OrToBuy =false,
+                            NameFileNews = "FarCry5_news.png",
+                            NameFileBestseller = "FarCry5_bestseller.png"},
             };
 
             games.ForEach(game => context.Games.AddOrUpdate(game));

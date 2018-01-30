@@ -189,10 +189,25 @@
       <DependentUpon>201801292319591_UpdateHK1.7.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Copie.cs" />
+    <Compile Include="Models\Employer.cs" />
+    <Compile Include="Models\Gallery.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\GameLanguage.cs" />
+    <Compile Include="Models\GamePublisher.cs" />
     <Compile Include="Models\GameType.cs" />
     <Compile Include="Models\Basket.cs" />
+    <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\Platform.cs" />
+    <Compile Include="Models\PlatformType.cs" />
+    <Compile Include="Models\SalesInvoice.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\SystemRequir.cs" />
+    <Compile Include="Models\Video.cs" />
+    <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
   </ItemGroup>

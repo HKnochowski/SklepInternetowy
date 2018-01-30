@@ -287,6 +287,10 @@
     <Compile Include="Migrations\201801302053386_Update2.3HK.Designer.cs">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801302313393_Update2.5HK.cs" />
+    <Compile Include="Migrations\201801302313393_Update2.5HK.Designer.cs">
+      <DependentUpon>201801302313393_Update2.5HK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -367,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801302053386_Update2.3HK.resx">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801302313393_Update2.5HK.resx">
+      <DependentUpon>201801302313393_Update2.5HK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

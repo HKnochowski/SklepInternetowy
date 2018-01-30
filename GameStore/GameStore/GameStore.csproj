@@ -181,6 +181,7 @@
     <Content Include="Content\eCommerceAssets\styles\eCommerceStyle.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\bestseller\100X125.gif" />
+    <Content Include="Content\images\bestseller\400X200.gif" />
     <Content Include="Content\images\bestseller\FarCry5_bestseller.png" />
     <Content Include="Content\images\bestseller\FrostPunk_bestseller.png" />
     <Content Include="Content\images\bestseller\Gta5_bestseller.png" />
@@ -194,6 +195,12 @@
     <Content Include="Content\images\news\Gta5_news.png" />
     <Content Include="Content\images\news\Skyrim_news.png" />
     <Content Include="Content\images\news\witcher_3_news.png" />
+    <Content Include="Content\images\recommended\100X125.gif" />
+    <Content Include="Content\images\recommended\FarCry5_recommended.png" />
+    <Content Include="Content\images\recommended\FrostPunk_recommended.png" />
+    <Content Include="Content\images\recommended\Gta5_recommended.png" />
+    <Content Include="Content\images\recommended\Skyrim_recommended.png" />
+    <Content Include="Content\images\recommended\witcher_3_recommended.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\jquery-1.11.3.min.js" />
     <Content Include="Content\Site.css" />
@@ -276,6 +283,10 @@
     <Compile Include="Migrations\201801302000191_Update.2.2.Designer.cs">
       <DependentUpon>201801302000191_Update.2.2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801302053386_Update2.3HK.cs" />
+    <Compile Include="Migrations\201801302053386_Update2.3HK.Designer.cs">
+      <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -352,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801302000191_Update.2.2.resx">
       <DependentUpon>201801302000191_Update.2.2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801302053386_Update2.3HK.resx">
+      <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

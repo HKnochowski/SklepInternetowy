@@ -26,5 +26,14 @@ namespace GameStore.Infrastructuce
 
             return PathRelative;
         }
+
+        public static string RecommendedImagePath(this UrlHelper helper, string NameImageRecommendedGame)
+        {
+            var RecommendedGamesFolder = AppConfig.RecommendedGamesFolderRelative;
+            var pathway = Path.Combine(RecommendedGamesFolder, NameImageRecommendedGame);
+            var PathRelative = helper.Content(pathway);
+
+            return PathRelative;
+        }
     }
 }

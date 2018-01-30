@@ -68,6 +68,16 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.OrRecommended, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.OrRecommended)
+                    @Html.ValidationMessageFor(model => model.OrRecommended, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.NameFileNews, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.NameFileNews, new { htmlAttributes = new { @class = "form-control" } })

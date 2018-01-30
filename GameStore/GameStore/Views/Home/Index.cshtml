@@ -11,7 +11,7 @@
                 <ol class="carousel-indicators">
                     @foreach (var newsActive in Model.NewsActive)
                     {
-                    <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
+                        <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
                     }
                     @foreach (var news in Model.News)
                     {
@@ -20,14 +20,14 @@
 
                 </ol>
                 <div class="carousel-inner">
-                   
+
                     @foreach (var newsActive in Model.NewsActive)
                     {
-                    <div class="item active">
-                        <img class="img-responsive" src="@Url.NewsImagePath(newsActive.NameFileNews)" alt="thumb">
-                        <div class="carousel-caption"> @newsActive.GameName - @newsActive.GamePremiere </div>
-                    
-                    </div>
+                        <div class="item active">
+                            <img class="img-responsive" src="@Url.NewsImagePath(newsActive.NameFileNews)" alt="thumb">
+                            <div class="carousel-caption"> @newsActive.GameName - @newsActive.GamePremiere </div>
+
+                        </div>
                     }
                     @foreach (var news in Model.News)
                     {
@@ -36,7 +36,7 @@
                             <div class="carousel-caption"> @news.GameName - @news.GamePremiere </div>
                         </div>
 
-                        
+
                     }
                 </div>
                 <a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel1" data-slide="next"><span class="icon-next"></span></a>
@@ -89,45 +89,29 @@
                     <div class="caption">
                         <a href="@Url.Action("Details", "Games", new { id = bestseller.GameId })"
                         <h3>@bestseller.GameName</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>@bestseller.GameDescription</p>
                         <p><a href="@Url.Action("AddToBasket", "Basket", new { id = bestseller.GameId })" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dodaj do koszyka</a></p>
                     </div>
                 </div>
             </div>
-            }
-        
+        }
+
     </div>
     <div class="row text-center hidden-xs">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="thumbnail">
-                <img src="@Url.Content("~/Content/images/400X200.gif")" alt="Thumbnail Image 1" class="img-responsive">
-                <div class="caption">
-                    <h3>Gra</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dodaj do koszyka</a> </p>
+        @foreach (var bestseller in Model.Bestsellery)
+            {
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="@Url.BestsellerImagePath(bestseller.NameFileBestseller)" alt="Thumbnail Image 1" class="img-responsive">
+                    <div class="caption">
+                        <a href="@Url.Action("Details", "Games", new { id = bestseller.GameId })"
+                        <h3>@bestseller.GameName</h3>
+                        <p>@bestseller.GameDescription</p>
+                        <p><a href="@Url.Action("AddToBasket", "Basket", new { id = bestseller.GameId })" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dodaj do koszyka</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="thumbnail">
-                <img src="@Url.Content("~/Content/images/400X200.gif")" alt="Thumbnail Image 1" class="img-responsive">
-                <div class="caption">
-                    <h3>Gra</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dodaj do koszyka</a> </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="thumbnail">
-                <img src="@Url.Content("~/Content/images/400X200.gif")" alt="Thumbnail Image 1" class="img-responsive">
-                <div class="caption">
-                    <h3>Gra</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dodaj do koszyka</a> </p>
-                </div>
-            </div>
-        </div>
+        }
     </div>
     <nav class="text-center">
         <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
@@ -149,79 +133,46 @@
     <div class="row">
         <div class="col-lg-4 col-md-6">
             <div class="media-object-default">
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"> </a> </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, vitae doloremque voluptatum doloribus neque assumenda velit sapiente quas aliquam ratione. Sed possimus corporis dolorum optio eaque in asperiores soluta expedita!
+                @foreach (var recommended in Model.Recommended)
+                {
+                    <div class="media">
+                        <div class="media-left"> <a href="@Url.Action("Details", "Games", new { id = recommended.GameId })"> <img class="media-object" src="@Url.RecommendedImagePath(recommended.NameFileRecomended)" alt="placeholder image"> </a> </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">@recommended.GameName</h4>
+                            @recommended.GameDescription
+                        </div>
                     </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"> </a> </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quasi doloribus non repellendus quae aperiam. Quos, eligendi itaque soluta ut dignissimos reprehenderit commodi laboriosam quis atque minus enim magnam delectus.
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, repellendus, ad, adipisci neque earum culpa magnam veritatis ipsum dolores odio laboriosam sed veniam accusamus! Architecto, provident nulla recusandae repellendus illo!
-                    </div>
-                </div>
+                }
             </div>
         </div>
         <hr class="hidden-md hidden-lg">
         <div class="col-lg-4 col-md-6">
             <div class="media-object-default">
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, eos, et in quam laboriosam ipsum laudantium laborum provident nihil modi reprehenderit tempora voluptatum quasi non libero quaerat vel. Assumenda, officiis?
+                @foreach (var recommended in Model.Recommended)
+                {
+                    <div class="media">
+                        <div class="media-left"> <a href="@Url.Action("Details", "Games", new { id = recommended.GameId })"> <img class="media-object" src="@Url.RecommendedImagePath(recommended.NameFileRecomended)" alt="placeholder image"> </a> </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">@recommended.GameName</h4>
+                            @recommended.GameDescription
+                        </div>
                     </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, minus, praesentium dignissimos non provident et consectetur illo expedita aliquam laboriosam esse incidunt deleniti accusantium debitis voluptas. Non vitae quos dolorem.
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus quidem aliquam voluptate quas impedit modi neque quasi deleniti dicta. Dolore, provident, unde voluptas dicta fugit odit maxime eius minus!
-                    </div>
-                </div>
+                }
             </div>
         </div>
         <hr class="hidden-lg">
         <div class="col-lg-4 col-md-12 hidden-md">
             <div class="media-object-default">
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorum reprehenderit vitae omnis. Quidem, recusandae, magni ut perspiciatis nobis consequuntur ullam molestias molestiae obcaecati ea labore aspernatur modi. Impedit, fugit!
+                @foreach (var recommended in Model.Recommended)
+                {
+                    <div class="media">
+                        <div class="media-left"> <a href="@Url.Action("Details", "Games", new { id = recommended.GameId })"> <img class="media-object" src="@Url.RecommendedImagePath(recommended.NameFileRecomended)" alt="placeholder image"> </a> </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">@recommended.GameName</h4>
+                            @recommended.GameDescription
+                        </div>
                     </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, libero, ea itaque atque vero quidem esse optio minus tenetur dolorem delectus nemo fugit deserunt quibusdam veritatis assumenda obcaecati praesentium omnis!
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left"> <a href="#"> <img class="media-object" src="@Url.Content("~/Content/images/100X125.gif")" alt="placeholder image"></a></div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Gra</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, cumque, ad voluptatibus vel perspiciatis reprehenderit magni in recusandae voluptatum iusto commodi laudantium veritatis esse labore nisi error tempora debitis impedit.
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>

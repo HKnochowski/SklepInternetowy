@@ -29,5 +29,16 @@ namespace GameStore.Infrastructuce
             }
 
         }
+
+        private static string _RecommendedGamesFolderRelative = ConfigurationManager.AppSettings["RecommendedGamesFolder"];
+
+        public static string RecommendedGamesFolderRelative
+        {
+            get
+            {
+                return _RecommendedGamesFolderRelative;
+            }
+
+        }
     }
 }

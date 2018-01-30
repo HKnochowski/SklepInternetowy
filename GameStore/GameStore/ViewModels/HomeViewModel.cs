@@ -12,5 +12,6 @@ namespace GameStore.ViewModels
         public IEnumerable<Game> Bestsellery { get; set; }
         public IEnumerable<Game> Recommended { get; set; }
         public IEnumerable<Game> NewsActive { get; set; }
+        public IEnumerable<GameType> gameType { get; set; }
     }
 }

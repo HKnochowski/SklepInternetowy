@@ -328,6 +328,7 @@
     <Content Include="Views\Games1\Edit.cshtml" />
     <Content Include="Views\Games1\Index.cshtml" />
     <Content Include="Views\Basket\AddToBasket.cshtml" />
+    <Content Include="Views\Games\_GameTypeMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -21,13 +21,15 @@ namespace GameStore.Controllers
             var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(2).ToList();
             var bestsellery = db.Games.Where(a => a.OrToBuy && a.GameRating <= 9).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
             var recommended = db.Games.Where(a => a.OrToBuy && a.OrRecommended).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+            var gameType = db.GamesTypes.OrderByDescending(a => a.NameGameType).ToList();
 
             var vm = new HomeViewModel()
             {
                 NewsActive = newsActive,
                 News = news,
                 Bestsellery = bestsellery,
-                Recommended = recommended
+                Recommended = recommended,
+                gameType = gameType
             };
 
             return View(vm);

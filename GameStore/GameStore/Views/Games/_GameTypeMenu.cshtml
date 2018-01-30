@@ -1,0 +1,13 @@
+﻿@model IEnumerable<GameStore.Models.GameType>
+
+<nav class="menu">
+    <h2><!-- Title for menuset 1 -->GATUNKI GIER</h2>
+    <hr>
+    <ul>
+        @foreach (var gameType in Model)
+        {
+        <li><a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType.ToString()})" 
+               title="NazwaGatunku">@gameType.NameGameType</a></li>
+        }
+    </ul>
+</nav>

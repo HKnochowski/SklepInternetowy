@@ -20,7 +20,7 @@ namespace GameStore.Controllers
             var newsActive = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(1).ToList();
             var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(2).ToList();
             var bestsellery = db.Games.Where(a => a.OrToBuy && a.GameRating <= 9).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
-            var recommended = db.Games.Where(a => a.OrToBuy/*TODO &&*/).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+            var recommended = db.Games.Where(a => a.OrToBuy && a.OrRecommended).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
 
             var vm = new HomeViewModel()
             {

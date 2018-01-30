@@ -3,7 +3,7 @@ namespace GameStore.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Dodanie_OrRecommended_Do_Gamecs : DbMigration
+    public partial class Update22 : DbMigration
     {
         public override void Up()
         {

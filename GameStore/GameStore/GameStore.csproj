@@ -272,9 +272,9 @@
     <Compile Include="Migrations\201801301926285_Update2.0.Designer.cs">
       <DependentUpon>201801301926285_Update2.0.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201801301951427_Dodanie_OrRecommended_Do_Game.cs.cs" />
-    <Compile Include="Migrations\201801301951427_Dodanie_OrRecommended_Do_Game.cs.Designer.cs">
-      <DependentUpon>201801301951427_Dodanie_OrRecommended_Do_Game.cs.cs</DependentUpon>
+    <Compile Include="Migrations\201801302000191_Update.2.2.cs" />
+    <Compile Include="Migrations\201801302000191_Update.2.2.Designer.cs">
+      <DependentUpon>201801302000191_Update.2.2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -350,7 +350,9 @@
     <EmbeddedResource Include="Migrations\201801301926285_Update2.0.resx">
       <DependentUpon>201801301926285_Update2.0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801301951427_Dodanie_OrRecommended_Do_Game.cs.resx" />
+    <EmbeddedResource Include="Migrations\201801302000191_Update.2.2.resx">
+      <DependentUpon>201801302000191_Update.2.2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -49,7 +49,7 @@ namespace GameStore.Controllers
         // Aby uzyskać więcej szczegółów, zobacz https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GameId,GameTypeId,GameName,GameDescription,GamePremiere,GameRating,OrToBuy,NameFileNews,NameFileBestseller,NameFileRecomended")] Game game)
+        public ActionResult Create([Bind(Include = "GameId,GameTypeId,GameName,GameDescription,GamePremiere,GameRating,OrToBuy,OrRecommended,NameFileNews,NameFileBestseller,NameFileRecomended")] Game game)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace GameStore.Controllers
         // Aby uzyskać więcej szczegółów, zobacz https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GameId,GameTypeId,GameName,GameDescription,GamePremiere,GameRating,OrToBuy,NameFileNews,NameFileBestseller,NameFileRecomended")] Game game)
+        public ActionResult Edit([Bind(Include = "GameId,GameTypeId,GameName,GameDescription,GamePremiere,GameRating,OrToBuy,OrRecommended,NameFileNews,NameFileBestseller,NameFileRecomended")] Game game)
         {
             if (ModelState.IsValid)
             {

@@ -7,13 +7,13 @@ namespace GameStore.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Dodanie_OrRecommended_Do_Gamecs : IMigrationMetadata
+    public sealed partial class Update22 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Dodanie_OrRecommended_Do_Gamecs));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Update22));
         
         string IMigrationMetadata.Id
         {
-            get { return "201801301951427_Dodanie_OrRecommended_Do_Game.cs"; }
+            get { return "201801302000191_Update.2.2"; }
         }
         
         string IMigrationMetadata.Source

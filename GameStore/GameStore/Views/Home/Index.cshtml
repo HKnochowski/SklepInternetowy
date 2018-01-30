@@ -9,23 +9,34 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div id="carousel1" class="carousel slide">
                 <ol class="carousel-indicators">
+                    @foreach (var newsActive in Model.NewsActive)
+                    {
                     <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
-                    <li data-target="#carousel1" data-slide-to="1" class=""> </li>
-                    <li data-target="#carousel1" data-slide-to="2" class=""> </li>
+                    }
+                    @foreach (var news in Model.News)
+                    {
+                        <li data-target="#carousel1" data-slide-to="0" class=""> </li>
+                    }
+
                 </ol>
                 <div class="carousel-inner">
+                   
+                    @foreach (var newsActive in Model.NewsActive)
+                    {
+                    <div class="item active">
+                        <img class="img-responsive" src="@Url.NewsImagePath(newsActive.NameFileNews)" alt="thumb">
+                        <div class="carousel-caption"> @newsActive.GameName - @newsActive.GamePremiere </div>
+                    
+                    </div>
+                    }
                     @foreach (var news in Model.News)
                     {
                         <div class="item">
-                            
-                            <img class="img-responsive" src="@Url.Content(Url.NewsImagePath(news.NameFileNews))" alt="thumb">
-                            <div class="carousel-caption"> 
-                                <a hfer="@Url.Action("Lista", "Games", new {GameName = news.GameName.ToLower()})">
-                                                                   @news.GameName 
-                                </a> 
-                            </div>
-                   
+                            <img class="img-responsive" src="@Url.NewsImagePath(news.NameFileNews)" alt="thumb">
+                            <div class="carousel-caption"> @news.GameName - @news.GamePremiere </div>
                         </div>
+
+                        
                     }
                 </div>
                 <a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel1" data-slide="next"><span class="icon-next"></span></a>
@@ -74,7 +85,7 @@
             {
             <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
                 <div class="thumbnail">
-                    <img src="@Url.Content(@Url.BestsellerImagePath(bestseller.NameFileBestseller))" alt="Thumbnail Image 1" class="img-responsive">
+                    <img src="@Url.BestsellerImagePath(bestseller.NameFileBestseller)" alt="Thumbnail Image 1" class="img-responsive">
                     <div class="caption">
                         <a href="@Url.Action("Details", "Games", new { id = bestseller.GameId })"
                         <h3>@bestseller.GameName</h3>

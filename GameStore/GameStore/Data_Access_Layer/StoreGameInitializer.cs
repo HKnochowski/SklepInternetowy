@@ -11,7 +11,7 @@ namespace GameStore.Data_Access_Layer
 {
     public class StoreGameInitializer : MigrateDatabaseToLatestVersion<StoreGameContext, Configuration >
     {
-        public static void SeedStoreGame(StoreGameContext context)
+        /*public static void SeedStoreGame(StoreGameContext context)
         {
             var games = new List<Game>
             {
@@ -82,6 +82,6 @@ namespace GameStore.Data_Access_Layer
             gamesTypes.ForEach(gameType => context.GamesTypes.AddOrUpdate(gameType));
             context.SaveChanges();
 
-        }
+        }*/
     }
 }

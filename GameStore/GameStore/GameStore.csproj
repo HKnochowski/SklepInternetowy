@@ -184,6 +184,10 @@
     <Compile Include="Migrations\201801292205525_Update1.6HK.Designer.cs">
       <DependentUpon>201801292205525_Update1.6HK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801292319591_UpdateHK1.7.cs" />
+    <Compile Include="Migrations\201801292319591_UpdateHK1.7.Designer.cs">
+      <DependentUpon>201801292319591_UpdateHK1.7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Copie.cs" />
     <Compile Include="Models\Game.cs" />
@@ -238,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801292205525_Update1.6HK.resx">
       <DependentUpon>201801292205525_Update1.6HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801292319591_UpdateHK1.7.resx">
+      <DependentUpon>201801292319591_UpdateHK1.7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

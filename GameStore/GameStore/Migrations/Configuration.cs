@@ -14,13 +14,13 @@ namespace GameStore.Migrations
             ContextKey = "GameStore.Data_Access_Layer.StoreGameContext";
         }
 
-        protected override void Seed(GameStore.Data_Access_Layer.StoreGameContext context)
+        /*protected override void Seed(GameStore.Data_Access_Layer.StoreGameContext context)
         {
             StoreGameInitializer.SeedStoreGame(context);
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-        }
+        }*/
     }
 }

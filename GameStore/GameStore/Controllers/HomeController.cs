@@ -17,12 +17,14 @@ namespace GameStore.Controllers
         public ActionResult Index()
         {
             //TEST var Test = db.Games.ToList();
-            var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(3).ToList();
+            var newsActive = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(1).ToList();
+            var news = db.Games.Where(a => a.OrToBuy).OrderByDescending(a => a.GamePremiere).Take(2).ToList();
             var bestsellery = db.Games.Where(a => a.OrToBuy && a.GameRating <= 9).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
             var recommended = db.Games.Where(a => a.OrToBuy/*TODO &&*/).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
 
             var vm = new HomeViewModel()
             {
+                NewsActive = newsActive,
                 News = news,
                 Bestsellery = bestsellery,
                 Recommended = recommended

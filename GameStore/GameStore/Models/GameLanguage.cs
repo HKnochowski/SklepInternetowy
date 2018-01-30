@@ -9,6 +9,7 @@ namespace GameStore.Models
     {
         public int IDGameLanguage { get; set; }
         public string NameLanguage { get; set; }
+
         public virtual ICollection<Game> Game { get; set; }
     }
 }

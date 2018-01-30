@@ -17,6 +17,7 @@ namespace GameStore.Models
         public string AppartmentNumber { get; set; }
         public int EmployersEmployersID { get; set; }
         public int Clients_ClientID { get; set; }
+
         public virtual Client Client { get; set; }
         public virtual Employer Employers { get; set; }
     }

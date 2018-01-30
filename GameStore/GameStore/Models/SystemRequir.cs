@@ -16,4 +16,3 @@ namespace GameStore.Models
         public virtual Game Game { get; set; }
     }
 }
-}

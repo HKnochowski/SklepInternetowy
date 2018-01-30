@@ -23,7 +23,7 @@ namespace GameStore.Data_Access_Layer
         public DbSet<GameType> GamesTypes { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Copie> Copies { get; set; }
-        public DbSet<Address> Address { get; set; }
+       /*TODO public DbSet<Address> Address { get; set; }
         public DbSet<Client> Client { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<Employer> Employer { get; set; }
@@ -37,7 +37,7 @@ namespace GameStore.Data_Access_Layer
         public DbSet<State> State { get; set; }
         public DbSet<SystemRequir> SystemRequir { get; set; }
         public DbSet<Video> Video { get; set; }
-        public DbSet<WishList> WishList { get; set; }
+        public DbSet<WishList> WishList { get; set; } */
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

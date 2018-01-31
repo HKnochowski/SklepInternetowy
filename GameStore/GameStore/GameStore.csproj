@@ -395,11 +395,9 @@
     <Content Include="Views\Games1\Edit.cshtml" />
     <Content Include="Views\Games1\Index.cshtml" />
     <Content Include="Views\Basket\AddToBasket.cshtml" />
-    <Content Include="Views\Account\Index.cshtml" />
-    <Content Include="Views\Account\LoggedIn.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Games\_GameTypeMenu.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

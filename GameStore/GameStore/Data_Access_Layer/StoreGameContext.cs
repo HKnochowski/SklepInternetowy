@@ -38,6 +38,7 @@ namespace GameStore.Data_Access_Layer
         public DbSet<State> State { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<Employer> Employer { get; set; }
+        public DbSet<UserAccount> UsersAccounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

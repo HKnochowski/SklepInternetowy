@@ -40,27 +40,5 @@ namespace GameStore.Infrastructuce
             }
 
         }
-
-        private static string _CategoryListGamesFolderRelative = ConfigurationManager.AppSettings["CategoryListGamesFolder"];
-
-        public static string CategoryListGamesFolderRelative
-        {
-            get
-            {
-                return _CategoryListGamesFolderRelative;
-            }
-
-        }
-
-        private static string _GameLogoGamesFolderRelative = ConfigurationManager.AppSettings["GameLogoGamesFolder"];
-
-        public static string GameLogoGamesFolderRelative
-        {
-            get
-            {
-                return _GameLogoGamesFolderRelative;
-            }
-
-        }
     }
 }

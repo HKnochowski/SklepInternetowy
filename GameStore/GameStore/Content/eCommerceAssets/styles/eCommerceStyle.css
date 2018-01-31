@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* Global Styles */
 a:hover {
 	color: rgba(255,255,255,1.00);
@@ -68,8 +68,8 @@ header {
 }
 /* main content of the site */
 #content .mainContent {
-	float: right;
-	width: 10%;
+	float: left;
+	width: 100%;
 	text-align: center;
 	padding-left: 4%;
 }

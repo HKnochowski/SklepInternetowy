@@ -15,7 +15,10 @@ namespace GameStore.Models
         public string Street { get; set; }
         public string HouseNumber { get; set; }
         public string AppartmentNumber { get; set; }
-        public virtual ICollection<Client> Client { get; set; }
-        public virtual ICollection<Employer> Employer { get; set; }
+        public int EmployersEmployersID { get; set; }
+        public int Clients_ClientID { get; set; }
+
+        public virtual Client Client { get; set; }
+        public virtual Employer Employers { get; set; }
     }
 }

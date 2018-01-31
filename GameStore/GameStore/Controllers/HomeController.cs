@@ -39,16 +39,5 @@ namespace GameStore.Controllers
         {
             return View(nazwa);
         }
-
-        public ActionResult ViewLoginWindow (string nazwa)
-        {
-            return View(nazwa);
-        }
-        
-        public ActionResult Register()
-        {
-            return View();
-        }
-        
     }
 }

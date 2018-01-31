@@ -1,6 +1,4 @@
-﻿@model GameStore.ViewModels.HomeViewModel
-
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -29,11 +27,14 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Premiery</a></li>
                             <li role="separator" class="divider"></li>
-                           @foreach (var gameType in Model.gameType) 
-                            {
-                                <li><a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType })">@gameType.NameGameType</a></li>
-                            }
-
+                            <li><a href="#">Akcji</a></li>
+                            <li><a href="#">Przygodowe</a></li>
+                            <li><a href="#">Niezależne</a></li>
+                            <li><a href="#">RPG</a></li>
+                            <li><a href="#">Strzelanki</a></li>
+                            <li><a href="#">Symulatory</a></li>
+                            <li><a href="#">Sportowe i wyścigowe</a></li>
+                            <li><a href="#">Strategiczne</a></li>
                             <li role"separator" class="divider"></li>
                             <li><a href="#">Przeglądaj wszystkie gry</a></li>
                         </ul>
@@ -56,10 +57,8 @@
         </header>
         <section id="offer">
             <!-- The offer section displays a banner text for promotions -->
-            <!--TO DO-->
             <h2>NAZWA KATEGORII</h2>
             <p>Tutaj będzie opis kategorii</p>
-            
         </section>
         <div id="content">
             <section class="sidebar">
@@ -71,8 +70,77 @@
                 </div>
             </section>
             <section class="mainContent">
-                @Html.Partial("_GameTypeList")
-                
+                <div class="productRow">
+                    <!-- Each product row contains info of 3 elements -->
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry </p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                </div>
+                <div class="productRow">
+                    <!-- Each product row contains info of 3 elements -->
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                </div>
+                <div class="productRow">
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                    <article class="productInfo">
+                        <!-- Each individual product description -->
+                        <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+                        <p class="price">$$$</p>
+                        <p class="productContent">Nazwa Gry</p>
+                        <input type="button" name="button" value="Dodaj do koszyka" class="buyButton">
+                    </article>
+                </div>
             </section>
         </div>
         <footer>

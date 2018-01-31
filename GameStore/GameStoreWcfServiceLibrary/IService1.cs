@@ -21,6 +21,18 @@ namespace GameStoreWcfServiceLibrary
         [OperationContract]
         int InsertGame(Game G);
 
+        [OperationContract]
+        int UpdateGame(Game G);
+
+        [OperationContract]
+        int DeleteGame(Game G);
+
+        [OperationContract]
+        Game GetGame(Game G);
+
+        [OperationContract]
+        List<Game> GetAllGame();
+
         // TODO: dodaj tutaj operacje usługi
     }
 

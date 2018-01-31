@@ -26,6 +26,30 @@
   <wsdl:message name="IService1_InsertGame_OutputMessage">
     <wsdl:part name="parameters" element="tns:InsertGameResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_UpdateGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGame" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGame" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGame" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGame" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGameResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -38,6 +62,22 @@
     <wsdl:operation name="InsertGame">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertGame" message="tns:IService1_InsertGame_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertGameResponse" message="tns:IService1_InsertGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateGame" message="tns:IService1_UpdateGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateGameResponse" message="tns:IService1_UpdateGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteGame" message="tns:IService1_DeleteGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteGameResponse" message="tns:IService1_DeleteGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetGame" message="tns:IService1_GetGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetGameResponse" message="tns:IService1_GetGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllGame" message="tns:IService1_GetAllGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllGameResponse" message="tns:IService1_GetAllGame_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -62,6 +102,42 @@
     </wsdl:operation>
     <wsdl:operation name="InsertGame">
       <soap:operation soapAction="http://tempuri.org/IService1/InsertGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGame">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGame">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGame">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGame">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllGame" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

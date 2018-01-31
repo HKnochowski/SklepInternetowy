@@ -16,4 +16,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Game" nillable="true" type="tns:Game" />
+  <xs:complexType name="ArrayOfGame">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Game" nillable="true" type="tns:Game" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGame" nillable="true" type="tns:ArrayOfGame" />
 </xs:schema>

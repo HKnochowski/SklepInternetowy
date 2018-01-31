@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.GameId = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
             this.GameDescription = new System.Windows.Forms.Label();
             this.GamePremiere = new System.Windows.Forms.Label();
             this.GameRating = new System.Windows.Forms.Label();
-            //this.GameTypeId = new System.Windows.Forms.Label();
             this.GameName = new System.Windows.Forms.Label();
             this.OrToBuy = new System.Windows.Forms.Label();
-            this.textId = new System.Windows.Forms.TextBox();
             this.textTypeId = new System.Windows.Forms.TextBox();
             this.textDescription = new System.Windows.Forms.TextBox();
             this.textPremiere = new System.Windows.Forms.TextBox();
@@ -51,27 +48,27 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.NameFileRecomended = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.GameTypeID1 = new System.Windows.Forms.Label();
+            this.Update = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.GameID = new System.Windows.Forms.Label();
+            this.textGameID = new System.Windows.Forms.TextBox();
+            this.Select = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SelectAll = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Add
             // 
-            this.button1.Location = new System.Drawing.Point(141, 188);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // GameId
-            // 
-            this.GameId.AutoSize = true;
-            this.GameId.Location = new System.Drawing.Point(26, 25);
-            this.GameId.Name = "GameId";
-            this.GameId.Size = new System.Drawing.Size(16, 13);
-            this.GameId.TabIndex = 1;
-            this.GameId.Text = "Id";
-            this.GameId.Click += new System.EventHandler(this.label1_Click);
+            this.Add.Location = new System.Drawing.Point(31, 189);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(75, 23);
+            this.Add.TabIndex = 0;
+            this.Add.Text = "Dodaj";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.button1_Click);
             // 
             // GameDescription
             // 
@@ -103,20 +100,10 @@
             this.GameRating.Text = "Rating";
             this.GameRating.Click += new System.EventHandler(this.label1_Click);
             // 
-            // GameTypeId
-            // 
-            //this.GameTypeId.AutoSize = true;
-            //this.GameTypeId.Location = new System.Drawing.Point(48, 25);
-            //this.GameTypeId.Name = "GameTypeId";
-            //this.GameTypeId.Size = new System.Drawing.Size(40, 13);
-            //this.GameTypeId.TabIndex = 1;
-            //this.GameTypeId.Text = "TypeId";
-            //this.GameTypeId.Click += new System.EventHandler(this.label1_Click);
-            // 
             // GameName
             // 
             this.GameName.AutoSize = true;
-            this.GameName.Location = new System.Drawing.Point(93, 25);
+            this.GameName.Location = new System.Drawing.Point(126, 22);
             this.GameName.Name = "GameName";
             this.GameName.Size = new System.Drawing.Size(35, 13);
             this.GameName.TabIndex = 1;
@@ -133,16 +120,9 @@
             this.OrToBuy.Text = "OrToBuy";
             this.OrToBuy.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textId
-            // 
-            this.textId.Location = new System.Drawing.Point(29, 42);
-            this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(13, 20);
-            this.textId.TabIndex = 2;
-            // 
             // textTypeId
             // 
-            this.textTypeId.Location = new System.Drawing.Point(51, 42);
+            this.textTypeId.Location = new System.Drawing.Point(84, 39);
             this.textTypeId.Name = "textTypeId";
             this.textTypeId.Size = new System.Drawing.Size(37, 20);
             this.textTypeId.TabIndex = 2;
@@ -171,7 +151,7 @@
             // 
             // textName
             // 
-            this.textName.Location = new System.Drawing.Point(96, 42);
+            this.textName.Location = new System.Drawing.Point(129, 39);
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(246, 20);
             this.textName.TabIndex = 2;
@@ -256,11 +236,102 @@
             this.textBox4.TabIndex = 2;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
+            // GameTypeID1
+            // 
+            this.GameTypeID1.AutoSize = true;
+            this.GameTypeID1.Location = new System.Drawing.Point(81, 22);
+            this.GameTypeID1.Name = "GameTypeID1";
+            this.GameTypeID1.Size = new System.Drawing.Size(42, 13);
+            this.GameTypeID1.TabIndex = 1;
+            this.GameTypeID1.Text = "TypeID";
+            this.GameTypeID1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Update
+            // 
+            this.Update.Location = new System.Drawing.Point(129, 189);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.TabIndex = 3;
+            this.Update.Text = "Aktualizuj";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.Aktualizuj_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.Location = new System.Drawing.Point(239, 189);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(75, 23);
+            this.Delete.TabIndex = 4;
+            this.Delete.Text = "Usuń";
+            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // GameID
+            // 
+            this.GameID.AutoSize = true;
+            this.GameID.Location = new System.Drawing.Point(28, 22);
+            this.GameID.Name = "GameID";
+            this.GameID.Size = new System.Drawing.Size(18, 13);
+            this.GameID.TabIndex = 1;
+            this.GameID.Text = "ID";
+            this.GameID.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textGameID
+            // 
+            this.textGameID.Location = new System.Drawing.Point(31, 39);
+            this.textGameID.Name = "textGameID";
+            this.textGameID.Size = new System.Drawing.Size(37, 20);
+            this.textGameID.TabIndex = 2;
+            // 
+            // Select
+            // 
+            this.Select.Location = new System.Drawing.Point(31, 248);
+            this.Select.Name = "Select";
+            this.Select.Size = new System.Drawing.Size(75, 23);
+            this.Select.TabIndex = 5;
+            this.Select.Text = "Wybierz";
+            this.Select.UseVisualStyleBackColor = true;
+            this.Select.Click += new System.EventHandler(this.Select_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(31, 288);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(696, 230);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // SelectAll
+            // 
+            this.SelectAll.Location = new System.Drawing.Point(129, 248);
+            this.SelectAll.Name = "SelectAll";
+            this.SelectAll.Size = new System.Drawing.Size(185, 23);
+            this.SelectAll.TabIndex = 7;
+            this.SelectAll.Text = "Wybierz wszystkie";
+            this.SelectAll.UseVisualStyleBackColor = true;
+            this.SelectAll.Click += new System.EventHandler(this.SelectAll_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(419, 247);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 307);
+            this.ClientSize = new System.Drawing.Size(769, 551);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SelectAll);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Select);
+            this.Controls.Add(this.Delete);
+            this.Controls.Add(this.Update);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -270,8 +341,8 @@
             this.Controls.Add(this.textName);
             this.Controls.Add(this.textPremiere);
             this.Controls.Add(this.textDescription);
+            this.Controls.Add(this.textGameID);
             this.Controls.Add(this.textTypeId);
-            this.Controls.Add(this.textId);
             this.Controls.Add(this.NameFileRecomended);
             this.Controls.Add(this.NameFileNews);
             this.Controls.Add(this.NameFileBestseller);
@@ -279,13 +350,14 @@
             this.Controls.Add(this.OrToBuy);
             this.Controls.Add(this.GameRating);
             this.Controls.Add(this.GamePremiere);
+            this.Controls.Add(this.GameID);
             this.Controls.Add(this.GameDescription);
+            this.Controls.Add(this.GameTypeID1);
             this.Controls.Add(this.GameName);
-            //this.Controls.Add(this.GameTypeId);
-            this.Controls.Add(this.GameId);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Add);
             this.Name = "GameForm";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,15 +365,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label GameId;
+        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Label GameDescription;
         private System.Windows.Forms.Label GamePremiere;
         private System.Windows.Forms.Label GameRating;
-        //private System.Windows.Forms.Label GameTypeId;
         private System.Windows.Forms.Label GameName;
         private System.Windows.Forms.Label OrToBuy;
-        private System.Windows.Forms.TextBox textId;
         private System.Windows.Forms.TextBox textTypeId;
         private System.Windows.Forms.TextBox textDescription;
         private System.Windows.Forms.TextBox textPremiere;
@@ -316,6 +385,15 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label NameFileRecomended;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label GameTypeID1;
+        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Label GameID;
+        private System.Windows.Forms.TextBox textGameID;
+        private System.Windows.Forms.Button Select;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button SelectAll;
+        private System.Windows.Forms.Button button1;
     }
 }
 

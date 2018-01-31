@@ -300,6 +300,30 @@ namespace GameStoreForms.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertGame", ReplyAction="http://tempuri.org/IService1/InsertGameResponse")]
         System.Threading.Tasks.Task<int> InsertGameAsync(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateGame", ReplyAction="http://tempuri.org/IService1/UpdateGameResponse")]
+        int UpdateGame(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateGame", ReplyAction="http://tempuri.org/IService1/UpdateGameResponse")]
+        System.Threading.Tasks.Task<int> UpdateGameAsync(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteGame", ReplyAction="http://tempuri.org/IService1/DeleteGameResponse")]
+        int DeleteGame(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteGame", ReplyAction="http://tempuri.org/IService1/DeleteGameResponse")]
+        System.Threading.Tasks.Task<int> DeleteGameAsync(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetGame", ReplyAction="http://tempuri.org/IService1/GetGameResponse")]
+        GameStoreForms.ServiceReference1.Game GetGame(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetGame", ReplyAction="http://tempuri.org/IService1/GetGameResponse")]
+        System.Threading.Tasks.Task<GameStoreForms.ServiceReference1.Game> GetGameAsync(GameStoreForms.ServiceReference1.Game G);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllGame", ReplyAction="http://tempuri.org/IService1/GetAllGameResponse")]
+        GameStoreForms.ServiceReference1.Game[] GetAllGame();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllGame", ReplyAction="http://tempuri.org/IService1/GetAllGameResponse")]
+        System.Threading.Tasks.Task<GameStoreForms.ServiceReference1.Game[]> GetAllGameAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -351,6 +375,38 @@ namespace GameStoreForms.ServiceReference1 {
         
         public System.Threading.Tasks.Task<int> InsertGameAsync(GameStoreForms.ServiceReference1.Game G) {
             return base.Channel.InsertGameAsync(G);
+        }
+        
+        public int UpdateGame(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.UpdateGame(G);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateGameAsync(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.UpdateGameAsync(G);
+        }
+        
+        public int DeleteGame(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.DeleteGame(G);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteGameAsync(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.DeleteGameAsync(G);
+        }
+        
+        public GameStoreForms.ServiceReference1.Game GetGame(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.GetGame(G);
+        }
+        
+        public System.Threading.Tasks.Task<GameStoreForms.ServiceReference1.Game> GetGameAsync(GameStoreForms.ServiceReference1.Game G) {
+            return base.Channel.GetGameAsync(G);
+        }
+        
+        public GameStoreForms.ServiceReference1.Game[] GetAllGame() {
+            return base.Channel.GetAllGame();
+        }
+        
+        public System.Threading.Tasks.Task<GameStoreForms.ServiceReference1.Game[]> GetAllGameAsync() {
+            return base.Channel.GetAllGameAsync();
         }
     }
 }

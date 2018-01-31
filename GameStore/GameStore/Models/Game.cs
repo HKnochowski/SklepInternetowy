@@ -27,8 +27,6 @@ namespace GameStore.Models
         [DataMember]
         public int GameRating { get; set; }
         [DataMember]
-        public double GamePrice { get; set; }
-        [DataMember]
         public bool OrToBuy { get; set; }
         [DataMember]
         public bool OrRecommended { get; set; }
@@ -38,15 +36,7 @@ namespace GameStore.Models
         public string NameFileBestseller { get; set; }
         [DataMember]
         public string NameFileRecomended { get; set; }
-        public string NameFileCategoryList { get; set; }
-        public string NameFileGameLogo { get; set; }
 
         public virtual GameType GameType { get; set; }
-        public virtual GameLanguage GameLanguage { get; set; }
-        public virtual GamePublisher GamePublisher { get; set; }
-        public virtual Platform Platform { get; set; }
-        public virtual SystemRequir SystemRequir { get; set; }
-        public virtual Gallery Gallery { get; set; }
-        public virtual WishList WishList { get; set; }
     }
 }

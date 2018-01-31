@@ -15,7 +15,8 @@ namespace GameStore.Models
         public bool ActiveAccount { get; set; }
         public DateTime HireDate { get; set; }
         public DateTime DismissDate { get; set; }
-        public virtual Address Address { get; set; }
+        public int ContactsContactID { get; set; }
+        public virtual ICollection<Address> Address { get; set; }
         public virtual Contact Contact { get; set; }
     }
 }

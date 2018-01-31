@@ -14,8 +14,6 @@ namespace GameStore.Models
         public DateTime AddedDate { get; set; }
 
         List<Copie> Copie { get; set; }
-        public virtual ICollection<Client> Client { get; set; }
-        public virtual ICollection<SalesInvoice> SalesInvoice { get; set; }
 
 
     }

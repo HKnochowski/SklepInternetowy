@@ -15,11 +15,15 @@ namespace GameStore.Models
         public string Avatar { get; set; }
         public bool IsLoggedIn { get; set; }
         public bool IsBanned { get; set; }
-        public virtual Address Address { get; set; }
+        public int StateStateID { get; set; }
+        public int Basket_BasketID { get; set; }
+        public virtual ICollection<Address> Address { get; set; }
+
         public virtual Basket Basket { get; set; }
-        public virtual SalesInvoice SalesInvoice { get; set; }
+        public virtual ICollection<SalesInvoice> SalesInvoice { get; set; }
+
         public virtual State State { get; set; }
-        //public virtual ICollection<Copie> Copie { get; set; }
-        public virtual WishList WishList { get; set; }
+        public virtual ICollection<Copie> Copie { get; set; }
+        public virtual ICollection<WishList> WishList { get; set; }
     }
 }

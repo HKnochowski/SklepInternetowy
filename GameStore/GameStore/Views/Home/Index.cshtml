@@ -42,7 +42,7 @@
                             <li role="separator" class="divider"></li>
                             @foreach (var gameType in Model.gameType)
                             {
-                                <li><a href="#">@gameType.NameGameType</a></li>
+                                <li><a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType })" >@gameType.NameGameType</a></li>
                             }
 
                             <li role"separator" class="divider"></li>

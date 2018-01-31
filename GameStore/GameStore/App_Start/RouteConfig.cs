@@ -14,6 +14,11 @@ namespace GameStore
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "GameTypeList",
+                url: "GameType/{gameNameType}",
+                defaults: new { Controller = "Games", action = "Lista" });
+
+            routes.MapRoute(
                 name: "StaticSite",
                 url: "site/{nazwa}.html",
                 defaults: new { Controller = "Home", action = "StaticSite" });

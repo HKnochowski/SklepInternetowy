@@ -11,7 +11,7 @@ namespace GameStore.Models
         public string NameGallery { get; set; }
         public DateTime DateAddGalery { get; set; }
         public virtual ICollection<Game> Game { get; set; }
-        public virtual ICollection<Image> Image { get; set; }
-        public virtual ICollection<Video> Video { get; set; }
+        public virtual Image Image { get; set; }
+        public virtual Video Video { get; set; }
     }
 }

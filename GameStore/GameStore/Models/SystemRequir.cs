@@ -13,6 +13,6 @@ namespace GameStore.Models
         public string Graphics { get; set; }
         public int Storage { get; set; }
         public int Games_GameID { get; set; }
-        public virtual Game Game { get; set; }
+        public virtual ICollection<Game> Game { get; set; }
     }
 }

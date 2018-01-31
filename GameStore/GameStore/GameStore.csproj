@@ -349,6 +349,14 @@
     <Compile Include="Migrations\201801310159439_Update3.0PW.Designer.cs">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801311925405_Update3.1PW.cs" />
+    <Compile Include="Migrations\201801311925405_Update3.1PW.Designer.cs">
+      <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312049367_Update3.2PW.cs" />
+    <Compile Include="Migrations\201801312049367_Update3.2PW.Designer.cs">
+      <DependentUpon>201801312049367_Update3.2PW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -476,6 +484,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801310159439_Update3.0PW.resx">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311925405_Update3.1PW.resx">
+      <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312049367_Update3.2PW.resx">
+      <DependentUpon>201801312049367_Update3.2PW.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

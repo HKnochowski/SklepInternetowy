@@ -349,6 +349,10 @@
     <Compile Include="Migrations\201801310159439_Update3.0PW.Designer.cs">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801312112589_Repair2.cs" />
+    <Compile Include="Migrations\201801312112589_Repair2.Designer.cs">
+      <DependentUpon>201801312112589_Repair2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -479,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801311925405_Update3.1PW.resx">
       <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312112589_Repair2.resx">
+      <DependentUpon>201801312112589_Repair2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

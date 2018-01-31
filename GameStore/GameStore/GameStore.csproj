@@ -229,6 +229,11 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -236,6 +241,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\Games1Controller.cs" />
     <Compile Include="Controllers\GamesController.cs" />
@@ -343,6 +349,10 @@
     <Compile Include="Migrations\201801310159439_Update3.0PW.Designer.cs">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801311925405_Update3.1PW.cs" />
+    <Compile Include="Migrations\201801311925405_Update3.1PW.Designer.cs">
+      <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -361,6 +371,7 @@
     <Compile Include="Models\SalesInvoice.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Models\SystemRequir.cs" />
+    <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -384,6 +395,10 @@
     <Content Include="Views\Games1\Edit.cshtml" />
     <Content Include="Views\Games1\Index.cshtml" />
     <Content Include="Views\Basket\AddToBasket.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\LoggedIn.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -464,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801310159439_Update3.0PW.resx">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311925405_Update3.1PW.resx">
+      <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -287,62 +287,6 @@
     <Compile Include="Migrations\201801302053386_Update2.3HK.Designer.cs">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201801310102324_PW1.cs" />
-    <Compile Include="Migrations\201801310102324_PW1.Designer.cs">
-      <DependentUpon>201801310102324_PW1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310111436_PW2.cs" />
-    <Compile Include="Migrations\201801310111436_PW2.Designer.cs">
-      <DependentUpon>201801310111436_PW2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310114159_PW21.cs" />
-    <Compile Include="Migrations\201801310114159_PW21.Designer.cs">
-      <DependentUpon>201801310114159_PW21.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310124574_PW2.2Update.cs" />
-    <Compile Include="Migrations\201801310124574_PW2.2Update.Designer.cs">
-      <DependentUpon>201801310124574_PW2.2Update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310131160_Update2.3PW.cs" />
-    <Compile Include="Migrations\201801310131160_Update2.3PW.Designer.cs">
-      <DependentUpon>201801310131160_Update2.3PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310132551_Update2.4PW.cs" />
-    <Compile Include="Migrations\201801310132551_Update2.4PW.Designer.cs">
-      <DependentUpon>201801310132551_Update2.4PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310140489_Update2.5PW.cs" />
-    <Compile Include="Migrations\201801310140489_Update2.5PW.Designer.cs">
-      <DependentUpon>201801310140489_Update2.5PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310141582_Update2.5.1PW.cs" />
-    <Compile Include="Migrations\201801310141582_Update2.5.1PW.Designer.cs">
-      <DependentUpon>201801310141582_Update2.5.1PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310144175_Update2.6PW.cs" />
-    <Compile Include="Migrations\201801310144175_Update2.6PW.Designer.cs">
-      <DependentUpon>201801310144175_Update2.6PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310149304_Update2.7PW.cs" />
-    <Compile Include="Migrations\201801310149304_Update2.7PW.Designer.cs">
-      <DependentUpon>201801310149304_Update2.7PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310150287_Update2.7.1PW.cs" />
-    <Compile Include="Migrations\201801310150287_Update2.7.1PW.Designer.cs">
-      <DependentUpon>201801310150287_Update2.7.1PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310154417_Update2.8PW.cs" />
-    <Compile Include="Migrations\201801310154417_Update2.8PW.Designer.cs">
-      <DependentUpon>201801310154417_Update2.8PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310156524_Update2.9PW.cs" />
-    <Compile Include="Migrations\201801310156524_Update2.9PW.Designer.cs">
-      <DependentUpon>201801310156524_Update2.9PW.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801310159439_Update3.0PW.cs" />
-    <Compile Include="Migrations\201801310159439_Update3.0PW.Designer.cs">
-      <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -384,6 +328,7 @@
     <Content Include="Views\Games1\Edit.cshtml" />
     <Content Include="Views\Games1\Index.cshtml" />
     <Content Include="Views\Basket\AddToBasket.cshtml" />
+    <Content Include="Views\Games\_GameTypeMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -422,48 +367,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801302053386_Update2.3HK.resx">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310102324_PW1.resx">
-      <DependentUpon>201801310102324_PW1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310111436_PW2.resx">
-      <DependentUpon>201801310111436_PW2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310114159_PW21.resx">
-      <DependentUpon>201801310114159_PW21.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310124574_PW2.2Update.resx">
-      <DependentUpon>201801310124574_PW2.2Update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310131160_Update2.3PW.resx">
-      <DependentUpon>201801310131160_Update2.3PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310132551_Update2.4PW.resx">
-      <DependentUpon>201801310132551_Update2.4PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310140489_Update2.5PW.resx">
-      <DependentUpon>201801310140489_Update2.5PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310141582_Update2.5.1PW.resx">
-      <DependentUpon>201801310141582_Update2.5.1PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310144175_Update2.6PW.resx">
-      <DependentUpon>201801310144175_Update2.6PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310149304_Update2.7PW.resx">
-      <DependentUpon>201801310149304_Update2.7PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310150287_Update2.7.1PW.resx">
-      <DependentUpon>201801310150287_Update2.7.1PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310154417_Update2.8PW.resx">
-      <DependentUpon>201801310154417_Update2.8PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310156524_Update2.9PW.resx">
-      <DependentUpon>201801310156524_Update2.9PW.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801310159439_Update3.0PW.resx">
-      <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

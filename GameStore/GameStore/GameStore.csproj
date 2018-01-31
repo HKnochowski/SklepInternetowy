@@ -291,6 +291,14 @@
     <Compile Include="Migrations\201801310102324_PW1.Designer.cs">
       <DependentUpon>201801310102324_PW1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801310111436_PW2.cs" />
+    <Compile Include="Migrations\201801310111436_PW2.Designer.cs">
+      <DependentUpon>201801310111436_PW2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801310114159_PW21.cs" />
+    <Compile Include="Migrations\201801310114159_PW21.Designer.cs">
+      <DependentUpon>201801310114159_PW21.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Client.cs" />
@@ -373,6 +381,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801310102324_PW1.resx">
       <DependentUpon>201801310102324_PW1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801310111436_PW2.resx">
+      <DependentUpon>201801310111436_PW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801310114159_PW21.resx">
+      <DependentUpon>201801310114159_PW21.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

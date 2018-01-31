@@ -44,5 +44,11 @@ namespace GameStore.Controllers
         {
             return View(nazwa);
         }
+        
+        public ActionResult Register()
+        {
+            return View();
+        }
+        
     }
 }

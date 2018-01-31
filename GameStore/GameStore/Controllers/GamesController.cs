@@ -19,7 +19,9 @@ namespace GameStore.Controllers
 
         public ActionResult Lista( string gameNameType )
         {
-            return View();
+            var gameType = db.GamesTypes.Include("Games").Where(g => g.NameGameType.ToUpper() == gameNameType.ToUpper()).Single();
+            var games = gameType.Games.ToList();
+            return View(games);
         }
 
         public ActionResult Details( string id )

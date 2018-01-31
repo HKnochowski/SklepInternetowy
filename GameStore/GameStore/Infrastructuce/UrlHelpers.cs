@@ -35,5 +35,23 @@ namespace GameStore.Infrastructuce
 
             return PathRelative;
         }
+
+        public static string CategoryListImagePath(this UrlHelper helper, string NameImageCategoryListGame)
+        {
+            var CategoryListGamesFolder = AppConfig.CategoryListGamesFolderRelative;
+            var pathway = Path.Combine(CategoryListGamesFolder, NameImageCategoryListGame);
+            var PathRelative = helper.Content(pathway);
+
+            return PathRelative;
+        }
+
+        public static string GameLogoImagePath(this UrlHelper helper, string NameImageGameLogoGame)
+        {
+            var GameLogoGamesFolder = AppConfig.GameLogoGamesFolderRelative;
+            var pathway = Path.Combine(GameLogoGamesFolder, NameImageGameLogoGame);
+            var PathRelative = helper.Content(pathway);
+
+            return PathRelative;
+        }
     }
 }

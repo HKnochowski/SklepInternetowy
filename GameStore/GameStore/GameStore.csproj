@@ -187,6 +187,16 @@
     <Content Include="Content\images\bestseller\Gta5_bestseller.png" />
     <Content Include="Content\images\bestseller\Skyrim_bestseller.png" />
     <Content Include="Content\images\bestseller\witcher_3_bestseller.png" />
+    <Content Include="Content\images\categorylist\FarCry5_list.png" />
+    <Content Include="Content\images\categorylist\FrostPunk_list.png" />
+    <Content Include="Content\images\categorylist\Gta5_list.png" />
+    <Content Include="Content\images\categorylist\Skyrim_list.png" />
+    <Content Include="Content\images\categorylist\witcher_3_list.png" />
+    <Content Include="Content\images\gamelogo\FarCry5_logo.png" />
+    <Content Include="Content\images\gamelogo\FrostPunk_logo.png" />
+    <Content Include="Content\images\gamelogo\Gta5_logo.png" />
+    <Content Include="Content\images\gamelogo\Skyrim_logo.png" />
+    <Content Include="Content\images\gamelogo\witcher_3_logo.png" />
     <Content Include="Content\images\news\1920x500.gif" />
     <Content Include="Content\images\400X200.gif" />
     <Content Include="Content\images\40X40.gif" />
@@ -293,6 +303,10 @@
     <Compile Include="Migrations\201801302053386_Update2.3HK.Designer.cs">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801302313393_Update2.5HK.cs" />
+    <Compile Include="Migrations\201801302313393_Update2.5HK.Designer.cs">
+      <DependentUpon>201801302313393_Update2.5HK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201801310102324_PW1.cs" />
     <Compile Include="Migrations\201801310102324_PW1.Designer.cs">
       <DependentUpon>201801310102324_PW1.cs</DependentUpon>
@@ -349,9 +363,41 @@
     <Compile Include="Migrations\201801310159439_Update3.0PW.Designer.cs">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801311642471_DodanieCenyDoGame.cs" />
+    <Compile Include="Migrations\201801311642471_DodanieCenyDoGame.Designer.cs">
+      <DependentUpon>201801311642471_DodanieCenyDoGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801311733365_DodanieNowegoZdjęciaDoGames.cs" />
+    <Compile Include="Migrations\201801311733365_DodanieNowegoZdjęciaDoGames.Designer.cs">
+      <DependentUpon>201801311733365_DodanieNowegoZdjęciaDoGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801311925405_Update3.1PW.cs" />
+    <Compile Include="Migrations\201801311925405_Update3.1PW.Designer.cs">
+      <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312041078_Repair1.cs" />
+    <Compile Include="Migrations\201801312041078_Repair1.Designer.cs">
+      <DependentUpon>201801312041078_Repair1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312049367_Update3.2PW.cs" />
+    <Compile Include="Migrations\201801312049367_Update3.2PW.Designer.cs">
+      <DependentUpon>201801312049367_Update3.2PW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201801312112589_Repair2.cs" />
     <Compile Include="Migrations\201801312112589_Repair2.Designer.cs">
       <DependentUpon>201801312112589_Repair2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312132488_repairFinish.cs" />
+    <Compile Include="Migrations\201801312132488_repairFinish.Designer.cs">
+      <DependentUpon>201801312132488_repairFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312137584_asd.cs" />
+    <Compile Include="Migrations\201801312137584_asd.Designer.cs">
+      <DependentUpon>201801312137584_asd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801312238531_DodanieGameLogoDoGameCS.cs" />
+    <Compile Include="Migrations\201801312238531_DodanieGameLogoDoGameCS.Designer.cs">
+      <DependentUpon>201801312238531_DodanieGameLogoDoGameCS.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -400,7 +446,11 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Games\_GameTypeMenu.cshtml" />
-    <None Include="Web.Debug.config">
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Games\_GameTypeList.cshtml" />
+    <Content Include="Views\Games\Details.cshtml" />
+    <None Include="Web.Debug.config">asd
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
@@ -438,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801302053386_Update2.3HK.resx">
       <DependentUpon>201801302053386_Update2.3HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801302313393_Update2.5HK.resx">
+      <DependentUpon>201801302313393_Update2.5HK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801310102324_PW1.resx">
       <DependentUpon>201801310102324_PW1.cs</DependentUpon>
@@ -481,11 +534,32 @@
     <EmbeddedResource Include="Migrations\201801310159439_Update3.0PW.resx">
       <DependentUpon>201801310159439_Update3.0PW.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311642471_DodanieCenyDoGame.resx">
+      <DependentUpon>201801311642471_DodanieCenyDoGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311733365_DodanieNowegoZdjęciaDoGames.resx">
+      <DependentUpon>201801311733365_DodanieNowegoZdjęciaDoGames.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801311925405_Update3.1PW.resx">
       <DependentUpon>201801311925405_Update3.1PW.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312041078_Repair1.resx">
+      <DependentUpon>201801312041078_Repair1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312049367_Update3.2PW.resx">
+      <DependentUpon>201801312049367_Update3.2PW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801312112589_Repair2.resx">
       <DependentUpon>201801312112589_Repair2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312132488_repairFinish.resx">
+      <DependentUpon>201801312132488_repairFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312137584_asd.resx">
+      <DependentUpon>201801312137584_asd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801312238531_DodanieGameLogoDoGameCS.resx">
+      <DependentUpon>201801312238531_DodanieGameLogoDoGameCS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

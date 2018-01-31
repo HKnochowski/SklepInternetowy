@@ -6,8 +6,10 @@
     <ul>
         @foreach (var gameType in Model)
         {
-        <li><a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType.ToString()})" 
-               title="NazwaGatunku">@gameType.NameGameType</a></li>
+            <li>
+                <a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType.ToString()})"
+                   title="NazwaGatunku">@gameType.NameGameType</a>
+            </li>
         }
     </ul>
 </nav>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<GameStore.Models.Game>
+@using GameStore.Infrastructuce
+
+<div class="productRow">
+    @foreach (var game in Model)
+    {
+        <article class="productInfo">
+            <!-- Each individual product description -->
+            <div><img alt="sample" src="@Url.CategoryListImagePath( game.NameFileCategoryList)">   </div>
+            <p class="price"> @game.GamePrice zł </p>
+            <a hfer="@Url.Action("Details", "Games", new { id = game.GameId } )">
+                <p class="productContent"> @game.GameName </p>
+            </a>
+
+
+
+            <input type="button" name="button" href="@Url.Action("AddToBasket", "Basket", new { id = game.GameId })" value="Dodaj do koszyka" class="buyButton">
+
+        </article>
+    }
+</div>

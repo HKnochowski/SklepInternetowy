@@ -27,11 +27,14 @@ namespace GameStore.Models
         [DataMember]
         public int GameRating { get; set; }
         [DataMember]
+        public double GamePrice { get; set; }
+        [DataMember]
         public bool OrToBuy { get; set; }
         public bool OrRecommended { get; set; }
         public string NameFileNews { get; set; }
         public string NameFileBestseller { get; set; }
         public string NameFileRecomended { get; set; }
+        public string NameFileCategoryList { get; set; }
 
         public virtual GameType GameType { get; set; }
         public virtual GameLanguage GameLanguage { get; set; }

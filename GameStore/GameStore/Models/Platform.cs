@@ -10,6 +10,6 @@ namespace GameStore.Models
         public int PlatformID { get; set; }
         public string NamePlatform { get; set; }
         public virtual ICollection<Game> Game { get; set; }
-        public virtual ICollection<PlatformType> PlatformType { get; set; }
+        public virtual PlatformType PlatformType { get; set; }
     }
 }

@@ -446,9 +446,11 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Games\_GameTypeMenu.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Games\_GameTypeList.cshtml" />
     <Content Include="Views\Games\Details.cshtml" />
-    <None Include="Web.Debug.config">
+    <None Include="Web.Debug.config">asd
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">

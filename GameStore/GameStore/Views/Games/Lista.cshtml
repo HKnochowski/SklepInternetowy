@@ -1,4 +1,4 @@
-﻿
+﻿@model GameStore.ViewModels.HomeViewModel
 
 <!doctype html>
 <html>
@@ -29,14 +29,11 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Premiery</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Akcji</a></li>
-                            <li><a href="#">Przygodowe</a></li>
-                            <li><a href="#">Niezależne</a></li>
-                            <li><a href="#">RPG</a></li>
-                            <li><a href="#">Strzelanki</a></li>
-                            <li><a href="#">Symulatory</a></li>
-                            <li><a href="#">Sportowe i wyścigowe</a></li>
-                            <li><a href="#">Strategiczne</a></li>
+                           @foreach (var gameType in Model.gameType) 
+                            {
+                                <li><a href="@Url.Action("Lista", "Games", new { gameNameType = gameType.NameGameType })">@gameType.NameGameType</a></li>
+                            }
+
                             <li role"separator" class="divider"></li>
                             <li><a href="#">Przeglądaj wszystkie gry</a></li>
                         </ul>
@@ -59,11 +56,10 @@
         </header>
         <section id="offer">
             <!-- The offer section displays a banner text for promotions -->
-            @foreach (var gameType in Model)
-            {
+            <!--TO DO-->
             <h2>NAZWA KATEGORII</h2>
             <p>Tutaj będzie opis kategorii</p>
-            }
+            
         </section>
         <div id="content">
             <section class="sidebar">

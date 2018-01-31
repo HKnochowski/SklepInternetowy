@@ -96,7 +96,9 @@
                         {
                             <div class="item active">
                                 <img class="img-responsive" src="@Url.NewsImagePath(newsActive.NameFileNews)" alt="thumb">
+                                <a href="@Url.Action("Details", "Games", new { id = newsActive.GameId })">
                                 <div class="carousel-caption"> @newsActive.GameName - @newsActive.GamePremiere </div>
+                                    </a>
 
                             </div>
                         }
@@ -104,8 +106,10 @@
                         {
                             <div class="item">
                                 <img class="img-responsive" src="@Url.NewsImagePath(news.NameFileNews)" alt="thumb">
-                                <div class="carousel-caption"> @news.GameName - @news.GamePremiere </div>
-                            </div>
+                                <a href="@Url.Action("Details", "Games", new { id = news.GameId })">
+                                    <div class="carousel-caption"> @news.GameName - @news.GamePremiere </div>
+                                    </a>
+</div>
 
 
                         }

@@ -44,5 +44,14 @@ namespace GameStore.Infrastructuce
 
             return PathRelative;
         }
+
+        public static string GameLogoImagePath(this UrlHelper helper, string NameImageGameLogoGame)
+        {
+            var GameLogoGamesFolder = AppConfig.GameLogoGamesFolderRelative;
+            var pathway = Path.Combine(GameLogoGamesFolder, NameImageGameLogoGame);
+            var PathRelative = helper.Content(pathway);
+
+            return PathRelative;
+        }
     }
 }

@@ -102,6 +102,18 @@ namespace GameStoreForms.ServiceReference1 {
         private int GameTypeIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameFileBestsellerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameFileNewsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameFileRecomendedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool OrRecommendedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool OrToBuyField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -188,6 +200,58 @@ namespace GameStoreForms.ServiceReference1 {
                 if ((this.GameTypeIdField.Equals(value) != true)) {
                     this.GameTypeIdField = value;
                     this.RaisePropertyChanged("GameTypeId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NameFileBestseller {
+            get {
+                return this.NameFileBestsellerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameFileBestsellerField, value) != true)) {
+                    this.NameFileBestsellerField = value;
+                    this.RaisePropertyChanged("NameFileBestseller");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NameFileNews {
+            get {
+                return this.NameFileNewsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameFileNewsField, value) != true)) {
+                    this.NameFileNewsField = value;
+                    this.RaisePropertyChanged("NameFileNews");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NameFileRecomended {
+            get {
+                return this.NameFileRecomendedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameFileRecomendedField, value) != true)) {
+                    this.NameFileRecomendedField = value;
+                    this.RaisePropertyChanged("NameFileRecomended");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool OrRecommended {
+            get {
+                return this.OrRecommendedField;
+            }
+            set {
+                if ((this.OrRecommendedField.Equals(value) != true)) {
+                    this.OrRecommendedField = value;
+                    this.RaisePropertyChanged("OrRecommended");
                 }
             }
         }

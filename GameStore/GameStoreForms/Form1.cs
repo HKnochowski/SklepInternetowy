@@ -41,10 +41,14 @@ namespace GameStoreForms
             G.GameName = textName.Text;
             G.GameDescription = textDescription.Text;
             G.GamePremiere = Convert.ToDateTime(textPremiere.Text);
-            G.GameRating = Convert.ToInt32(textRating.Text); ;
+            G.GameRating = Convert.ToInt32(textRating.Text);
             G.OrToBuy = Convert.ToBoolean(textOrToBuy.Text);
             //G.GameType = textType.Text;
-            G.GameTypeId = Convert.ToInt32(textTypeId.Text); ;
+            G.GameTypeId = Convert.ToInt32(textTypeId.Text);
+            G.OrRecommended = Convert.ToBoolean(textBox1.Text);
+            G.NameFileBestseller = textBox2.Text;
+            G.NameFileNews = textBox3.Text;
+            G.NameFileRecomended = textBox4.Text;
 
             Service1Client service = new Service1Client();
 

@@ -27,7 +27,7 @@ namespace GameStoreWcfServiceLibrary
         {
             connStringBuilder = new SqlConnectionStringBuilder();
             connStringBuilder.DataSource = "DESKTOP-B4P8S8M";
-            connStringBuilder.InitialCatalog = "GameStore.Data_Access_Layer.StoreGameContext";
+            //connStringBuilder.InitialCatalog = "StoreGameContext";
             connStringBuilder.Encrypt = true;
             connStringBuilder.TrustServerCertificate = true;
             connStringBuilder.ConnectTimeout = 30;
@@ -61,14 +61,19 @@ namespace GameStoreWcfServiceLibrary
         {
             try
             {
-                comm.CommandText = "INSERT INTO TGame VALUES";
+                comm.CommandText = ("INSERT INTO Game VALUES(@ID, @TypeId, @Name, @Description, @Premiere, @Rating, @OrToBuy, @NameFileNews, @NameFileBestseller, @NameFileRecomended, @OrRecommended)");
                 comm.Parameters.AddWithValue("ID", G.GameId);
                 comm.Parameters.AddWithValue("Name", G.GameName);
                 comm.Parameters.AddWithValue("Description", G.GameDescription);
                 comm.Parameters.AddWithValue("Premiere", G.GamePremiere);
                 comm.Parameters.AddWithValue("Rating", G.GameRating);
-                comm.Parameters.AddWithValue("Type", G.GameType);
+                //comm.Parameters.AddWithValue("Type", G.GameType);
                 comm.Parameters.AddWithValue("TypeId", G.GameTypeId);
+                comm.Parameters.AddWithValue("OrToBuy", G.OrToBuy);
+                comm.Parameters.AddWithValue("OrRecommended", G.OrRecommended);
+                comm.Parameters.AddWithValue("NameFileBestseller", G.NameFileBestseller);
+                comm.Parameters.AddWithValue("NameFileNews", G.NameFileNews);
+                comm.Parameters.AddWithValue("NameFileRecomended", G.NameFileRecomended);
 
                 comm.CommandType = CommandType.Text;
                 conn.Open();

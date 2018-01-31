@@ -8,6 +8,10 @@
       <xs:element minOccurs="0" name="GamePremiere" type="xs:dateTime" />
       <xs:element minOccurs="0" name="GameRating" type="xs:int" />
       <xs:element minOccurs="0" name="GameTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="NameFileBestseller" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameFileNews" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameFileRecomended" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrRecommended" type="xs:boolean" />
       <xs:element minOccurs="0" name="OrToBuy" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>

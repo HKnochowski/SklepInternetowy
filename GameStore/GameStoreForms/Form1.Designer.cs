@@ -33,7 +33,7 @@
             this.GameDescription = new System.Windows.Forms.Label();
             this.GamePremiere = new System.Windows.Forms.Label();
             this.GameRating = new System.Windows.Forms.Label();
-            this.GameTypeId = new System.Windows.Forms.Label();
+            //this.GameTypeId = new System.Windows.Forms.Label();
             this.GameName = new System.Windows.Forms.Label();
             this.OrToBuy = new System.Windows.Forms.Label();
             this.textId = new System.Windows.Forms.TextBox();
@@ -43,8 +43,14 @@
             this.textRating = new System.Windows.Forms.TextBox();
             this.textName = new System.Windows.Forms.TextBox();
             this.textOrToBuy = new System.Windows.Forms.TextBox();
-            this.GameType = new System.Windows.Forms.Label();
-            this.textType = new System.Windows.Forms.TextBox();
+            this.OrRecommended = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NameFileBestseller = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.NameFileNews = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.NameFileRecomended = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -99,13 +105,13 @@
             // 
             // GameTypeId
             // 
-            this.GameTypeId.AutoSize = true;
-            this.GameTypeId.Location = new System.Drawing.Point(48, 25);
-            this.GameTypeId.Name = "GameTypeId";
-            this.GameTypeId.Size = new System.Drawing.Size(40, 13);
-            this.GameTypeId.TabIndex = 1;
-            this.GameTypeId.Text = "TypeId";
-            this.GameTypeId.Click += new System.EventHandler(this.label1_Click);
+            //this.GameTypeId.AutoSize = true;
+            //this.GameTypeId.Location = new System.Drawing.Point(48, 25);
+            //this.GameTypeId.Name = "GameTypeId";
+            //this.GameTypeId.Size = new System.Drawing.Size(40, 13);
+            //this.GameTypeId.TabIndex = 1;
+            //this.GameTypeId.Text = "TypeId";
+            //this.GameTypeId.Click += new System.EventHandler(this.label1_Click);
             // 
             // GameName
             // 
@@ -178,43 +184,104 @@
             this.textOrToBuy.TabIndex = 2;
             this.textOrToBuy.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
-            // GameType
+            // OrRecommended
             // 
-            this.GameType.AutoSize = true;
-            this.GameType.Location = new System.Drawing.Point(178, 120);
-            this.GameType.Name = "GameType";
-            this.GameType.Size = new System.Drawing.Size(31, 13);
-            this.GameType.TabIndex = 1;
-            this.GameType.Text = "Type";
-            this.GameType.Click += new System.EventHandler(this.label1_Click);
+            this.OrRecommended.AutoSize = true;
+            this.OrRecommended.Location = new System.Drawing.Point(181, 121);
+            this.OrRecommended.Name = "OrRecommended";
+            this.OrRecommended.Size = new System.Drawing.Size(90, 13);
+            this.OrRecommended.TabIndex = 1;
+            this.OrRecommended.Text = "OrRecommended";
+            this.OrRecommended.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textType
+            // textBox1
             // 
-            this.textType.Location = new System.Drawing.Point(181, 137);
-            this.textType.Name = "textType";
-            this.textType.Size = new System.Drawing.Size(46, 20);
-            this.textType.TabIndex = 2;
+            this.textBox1.Location = new System.Drawing.Point(184, 137);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(46, 20);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // NameFileBestseller
+            // 
+            this.NameFileBestseller.AutoSize = true;
+            this.NameFileBestseller.Location = new System.Drawing.Point(236, 121);
+            this.NameFileBestseller.Name = "NameFileBestseller";
+            this.NameFileBestseller.Size = new System.Drawing.Size(96, 13);
+            this.NameFileBestseller.TabIndex = 1;
+            this.NameFileBestseller.Text = "NameFileBestseller";
+            this.NameFileBestseller.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(239, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(46, 20);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // NameFileNews
+            // 
+            this.NameFileNews.AutoSize = true;
+            this.NameFileNews.Location = new System.Drawing.Point(291, 121);
+            this.NameFileNews.Name = "NameFileNews";
+            this.NameFileNews.Size = new System.Drawing.Size(78, 13);
+            this.NameFileNews.TabIndex = 1;
+            this.NameFileNews.Text = "NameFileNews";
+            this.NameFileNews.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(294, 137);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(46, 20);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // NameFileRecomended
+            // 
+            this.NameFileRecomended.AutoSize = true;
+            this.NameFileRecomended.Location = new System.Drawing.Point(346, 121);
+            this.NameFileRecomended.Name = "NameFileRecomended";
+            this.NameFileRecomended.Size = new System.Drawing.Size(115, 13);
+            this.NameFileRecomended.TabIndex = 1;
+            this.NameFileRecomended.Text = "NameFileRecomended";
+            this.NameFileRecomended.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(349, 137);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(46, 20);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 307);
-            this.Controls.Add(this.textType);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textOrToBuy);
             this.Controls.Add(this.textRating);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.textPremiere);
             this.Controls.Add(this.textDescription);
             this.Controls.Add(this.textTypeId);
-            this.Controls.Add(this.GameType);
             this.Controls.Add(this.textId);
+            this.Controls.Add(this.NameFileRecomended);
+            this.Controls.Add(this.NameFileNews);
+            this.Controls.Add(this.NameFileBestseller);
+            this.Controls.Add(this.OrRecommended);
             this.Controls.Add(this.OrToBuy);
             this.Controls.Add(this.GameRating);
             this.Controls.Add(this.GamePremiere);
             this.Controls.Add(this.GameDescription);
             this.Controls.Add(this.GameName);
-            this.Controls.Add(this.GameTypeId);
+            //this.Controls.Add(this.GameTypeId);
             this.Controls.Add(this.GameId);
             this.Controls.Add(this.button1);
             this.Name = "GameForm";
@@ -231,7 +298,7 @@
         private System.Windows.Forms.Label GameDescription;
         private System.Windows.Forms.Label GamePremiere;
         private System.Windows.Forms.Label GameRating;
-        private System.Windows.Forms.Label GameTypeId;
+        //private System.Windows.Forms.Label GameTypeId;
         private System.Windows.Forms.Label GameName;
         private System.Windows.Forms.Label OrToBuy;
         private System.Windows.Forms.TextBox textId;
@@ -241,8 +308,14 @@
         private System.Windows.Forms.TextBox textRating;
         private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.TextBox textOrToBuy;
-        private System.Windows.Forms.Label GameType;
-        private System.Windows.Forms.TextBox textType;
+        private System.Windows.Forms.Label OrRecommended;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label NameFileBestseller;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label NameFileNews;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label NameFileRecomended;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 

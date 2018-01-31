@@ -234,6 +234,11 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -241,6 +246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\Games1Controller.cs" />
     <Compile Include="Controllers\GamesController.cs" />
@@ -382,6 +388,7 @@
     <Compile Include="Models\SalesInvoice.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Models\SystemRequir.cs" />
+    <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -405,6 +412,10 @@
     <Content Include="Views\Games1\Edit.cshtml" />
     <Content Include="Views\Games1\Index.cshtml" />
     <Content Include="Views\Basket\AddToBasket.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\LoggedIn.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Games\_GameTypeMenu.cshtml" />
     <Content Include="Views\Games\_GameTypeList.cshtml" />
     <None Include="Web.Debug.config">

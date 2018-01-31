@@ -51,5 +51,16 @@ namespace GameStore.Infrastructuce
             }
 
         }
+
+        private static string _GameLogoGamesFolderRelative = ConfigurationManager.AppSettings["GameLogoGamesFolder"];
+
+        public static string GameLogoGamesFolderRelative
+        {
+            get
+            {
+                return _GameLogoGamesFolderRelative;
+            }
+
+        }
     }
 }

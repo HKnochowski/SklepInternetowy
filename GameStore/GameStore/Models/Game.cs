@@ -35,6 +35,7 @@ namespace GameStore.Models
         public string NameFileBestseller { get; set; }
         public string NameFileRecomended { get; set; }
         public string NameFileCategoryList { get; set; }
+        public string NameFileGameLogo { get; set; }
 
         public virtual GameType GameType { get; set; }
         public virtual GameLanguage GameLanguage { get; set; }

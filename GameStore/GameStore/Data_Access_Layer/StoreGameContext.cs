@@ -23,13 +23,13 @@ namespace GameStore.Data_Access_Layer
         public DbSet<GameType> GamesTypes { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Copie> Copies { get; set; }
+        public DbSet<GameLanguage> GamesLanguages { get; set; }
+        public DbSet<GamePublisher> GamesPublishers { get; set; }
        /*TODO public DbSet<Address> Address { get; set; }
         public DbSet<Client> Client { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<Employer> Employer { get; set; }
         public DbSet<Gallery> Gallery { get; set; }
-        public DbSet<GameLanguage> GameLanguage { get; set; }
-        public DbSet<GamePublisher> GamePublisher { get; set; }
         public DbSet<Image> Image { get; set; }
         public DbSet<Platform> Platform { get; set; }
         public DbSet<PlatformType> PlatformType { get; set; }

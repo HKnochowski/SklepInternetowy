@@ -10,7 +10,7 @@ namespace GameStore.Models
         public int WishListID { get; set; }
         public int CodeWishList { get; set; }
         public int Games_GameID { get; set; }
-        public virtual Game Game { get; set; }
+        public virtual ICollection<Game> Game { get; set; }
         public virtual ICollection<Client> Client { get; set; }
     }
 }

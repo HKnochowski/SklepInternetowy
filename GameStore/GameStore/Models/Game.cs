@@ -34,5 +34,11 @@ namespace GameStore.Models
         public string NameFileRecomended { get; set; }
 
         public virtual GameType GameType { get; set; }
+        public virtual GameLanguage GameLanguage { get; set; }
+        public virtual GamePublisher GamePublisher { get; set; }
+        public virtual Platform Platform { get; set; }
+        public virtual SystemRequir SystemRequir { get; set; }
+        public virtual Gallery Gallery { get; set; }
+        public virtual WishList WishList { get; set; }
     }
 }

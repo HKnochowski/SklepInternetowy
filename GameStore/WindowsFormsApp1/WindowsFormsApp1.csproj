@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,25 +47,204 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Addresses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Addresses.Designer.cs">
+      <DependentUpon>Addresses.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Baskets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Baskets.Designer.cs">
+      <DependentUpon>Baskets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMenu.Designer.cs">
+      <DependentUpon>ClientMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Copies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Copies.Designer.cs">
+      <DependentUpon>Copies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employers.Designer.cs">
+      <DependentUpon>Employers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gallery.Designer.cs">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameLanguage.Designer.cs">
+      <DependentUpon>GameLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePublisher.Designer.cs">
+      <DependentUpon>GamePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameType.Designer.cs">
+      <DependentUpon>GameType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gry.Designer.cs">
+      <DependentUpon>Gry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image.Designer.cs">
+      <DependentUpon>Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Platform.Designer.cs">
+      <DependentUpon>Platform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformType.Designer.cs">
+      <DependentUpon>PlatformType.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SalesInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesInvoice.Designer.cs">
+      <DependentUpon>SalesInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="State.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="State.Designer.cs">
+      <DependentUpon>State.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemRequir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemRequir.Designer.cs">
+      <DependentUpon>SystemRequir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WishList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WishList.Designer.cs">
+      <DependentUpon>WishList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addresses.resx">
+      <DependentUpon>Addresses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Baskets.resx">
+      <DependentUpon>Baskets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMenu.resx">
+      <DependentUpon>ClientMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Copies.resx">
+      <DependentUpon>Copies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employers.resx">
+      <DependentUpon>Employers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gallery.resx">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameLanguage.resx">
+      <DependentUpon>GameLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePublisher.resx">
+      <DependentUpon>GamePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameType.resx">
+      <DependentUpon>GameType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gry.resx">
+      <DependentUpon>Gry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image.resx">
+      <DependentUpon>Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platform.resx">
+      <DependentUpon>Platform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformType.resx">
+      <DependentUpon>PlatformType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +255,40 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SalesInvoice.resx">
+      <DependentUpon>SalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="State.resx">
+      <DependentUpon>State.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemRequir.resx">
+      <DependentUpon>SystemRequir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WishList.resx">
+      <DependentUpon>WishList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\ServiceReference1\GameStore.Models.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\GameStoreWcfServiceLibrary.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\service.wsdl" />
+    <None Include="Connected Services\ServiceReference1\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowsFormsApp1.ServiceReference1.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowsFormsApp1.ServiceReference1.Game.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +304,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

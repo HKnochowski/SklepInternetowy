@@ -15,6 +15,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStoreWcfServiceLibrary", "GameStoreWcfServiceLibrary\GameStoreWcfServiceLibrary.csproj", "{9D441465-152C-4812-8D21-0C7C44335BE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{C7E5A101-69BE-4F0B-9C8F-0ABAE883CE99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D441465-152C-4812-8D21-0C7C44335BE1} = {9D441465-152C-4812-8D21-0C7C44335BE1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,16 +1,16 @@
-﻿namespace GameStoreForms
+﻿namespace WindowsFormsApp1
 {
-    partial class GameForm
+    partial class Gry
     {
         /// <summary>
-        /// Wymagana zmienna projektanta.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Wyczyść wszystkie używane zasoby.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -56,6 +56,7 @@
             this.Select = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SelectAll = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -310,11 +311,22 @@
             this.SelectAll.UseVisualStyleBackColor = true;
             this.SelectAll.Click += new System.EventHandler(this.SelectAll_Click);
             // 
-            // GameForm
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(414, 248);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // Gry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 551);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SelectAll);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Select);
@@ -343,8 +355,8 @@
             this.Controls.Add(this.GameTypeID1);
             this.Controls.Add(this.GameName);
             this.Controls.Add(this.Add);
-            this.Name = "GameForm";
-            this.Text = "Form1";
+            this.Name = "Gry";
+            this.Text = "Gry";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -381,6 +393,6 @@
         private System.Windows.Forms.Button Select;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button SelectAll;
+        private System.Windows.Forms.Button button1;
     }
 }
-

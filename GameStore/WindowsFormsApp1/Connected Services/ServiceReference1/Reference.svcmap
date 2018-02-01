@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd6697c1-42a2-4f21-99c4-3a851425479e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6ae08872-6210-48ff-9931-f59ca6eaedc3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="6662560d-c448-41d4-90a0-5fa6d9118f84" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="d17ad27e-3db3-4e8b-b807-b43eb16206d3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" />
+    <MetadataFile FileName="GameStoreWcfServiceLibrary.xsd" MetadataType="Schema" ID="599e7145-86b7-4352-ba5e-84d6d18dc6d5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" />
+    <MetadataFile FileName="GameStore.Models.xsd" MetadataType="Schema" ID="a17f9c68-a1ba-454c-ac30-afc78366e360" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GameStoreWcfServiceLibrary/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

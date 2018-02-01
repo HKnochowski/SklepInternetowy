@@ -36,6 +36,7 @@ namespace GameStore.Models
         public string NameFileBestseller { get; set; }
         [DataMember]
         public string NameFileRecomended { get; set; }
+        [DataMember]
 
         public virtual GameType GameType { get; set; }
     }
